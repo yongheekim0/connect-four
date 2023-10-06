@@ -1,3 +1,51 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: gray;
+  /* viewport units: percentage of: vh (veiwport height), vw (veiwport width), vmin (min of vw or vh) */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-size: 4vmin;
+  color: darkgray;
+  letter-spacing: 1vmin;
+}
+
+#markers {
+  display: grid;
+  grid-template-columns: repeat(7, 10vmin);
+  gap: 1vmin;
+  margin-top: 1.5vmin;
+}
+
+#markers > div {
+  height: 10vmin;
+  border-width: 5vmin;
+  border-style: solid;
+  border-color: lightgray transparent transparent;
+  transform: scale(0.7);
+}
+
+#markers > div:hover {
+  transform: scale(0.9);
+  transition: all 150ms ease-in-out;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 10vmin);
+  grid-template-rows: repeat(6, 10vmin);
+  gap: 1vmin;
+  margin-top: -4vmin;
+}
+
+#board > div {
+  border-radius: 100%;
+  border: 0.1vmin solid gray;
 }
