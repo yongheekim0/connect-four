@@ -42,7 +42,7 @@ header {
   grid-template-columns: repeat(7, 10vmin);
   grid-template-rows: repeat(6, 10vmin);
   gap: 1vmin;
-  margin-top: 4vmin;
+  margin-top: -4vmin;
 }
 
 #board > div {
